@@ -27,6 +27,6 @@ function translateKode(x){
     return parseInt(result)*1000;
 }
 
-encodeBaju("AT","YH",70000);
-encodeBaju("ESH", "DTT", 150000);
-encodeBaju("DET", "DHT", 250000);
+encodeBaju("AT","YH",70000); // “ACCEPT, terima kasih sudah berbelanja”
+encodeBaju("ESH", "DTT", 150000); // “REJECT, belum balik modal nih!”
+encodeBaju("DET", "DHT", 250000);//GOOD, customer terbaik gak pake nawar”

@@ -8,9 +8,9 @@ function App() {
 
   const encodeBaju = () => {
     try {
-      if (ht > translateKode(hji)) {
+      if (ht >= translateKode(hji)) {
         setResult('GOOD, customer terbaik gak pake nawar');
-      } else if (translateKode(hj) <= ht) {
+      } else if (ht >= translateKode(hj)) {
         setResult('ACCEPT, terima kasih sudah berbelanja');
       } else {
         setResult('REJECT, belum balik modal nih');
@@ -41,7 +41,7 @@ function App() {
         <h1 className="text-2xl font-bold mb-4">Encode Baju Function</h1>
         <div className="mb-4">
           <label htmlFor="hj" className="block text-sm font-semibold">
-            HJ:
+            Harga Jual:
           </label>
           <input
             type="text"
@@ -53,7 +53,7 @@ function App() {
         </div>
         <div className="mb-4">
           <label htmlFor="hji" className="block text-sm font-semibold">
-            HJI:
+            Harga Jual Ideal:
           </label>
           <input
             type="text"
@@ -65,7 +65,7 @@ function App() {
         </div>
         <div className="mb-4">
           <label htmlFor="ht" className="block text-sm font-semibold">
-            HT:
+            Harga Ditawar:
           </label>
           <input
             type="number"
